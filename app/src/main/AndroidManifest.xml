@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.finalproject">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FINALPROJECT">
+        <activity android:name=".MesasActivity"></activity>
+        <activity android:name=".ComandaActivity" />
+        <activity android:name=".RecetarioActivity" />
+        <activity android:name=".CerrarSesionActivity" />
+        <activity android:name=".AsignacionMesaAdmiActivity3" />
+        <activity android:name=".AsignacionMesaAdmiActivity2" />
+        <activity android:name=".AsignacionMesasAdmiActivity" />
+        <activity android:name=".MesasAsignadasMeseroActivity" />
+        <activity android:name=".CrudEmpleadoActivity" />
+        <activity android:name=".MeseroRelacionGananciaActivity" />
+        <activity android:name=".ReportesAdminActivity" />
+        <activity android:name=".MenuEmpleadoActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ModificarEmpleado" />
+        <activity android:name=".MenuAdministr" />
+        <activity android:name=".InterfazRegistroEmpleado" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
