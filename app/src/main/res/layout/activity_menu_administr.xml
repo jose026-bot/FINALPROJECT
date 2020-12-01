@@ -28,7 +28,7 @@
         android:layout_marginTop="11dp"
         android:text="ESTADÍSTICAS"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
+        app:layout_constraintTop_toBottomOf="@+id/imgbtnEstadisticas" />
 
     <TextView
         android:id="@+id/textView9"
@@ -38,8 +38,8 @@
         android:layout_marginLeft="4dp"
         android:layout_marginTop="9dp"
         android:text="EMPLEADO"
-        app:layout_constraintStart_toStartOf="@+id/imageButton5"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton5" />
+        app:layout_constraintStart_toStartOf="@+id/imgbtnEmpleado"
+        app:layout_constraintTop_toBottomOf="@+id/imgbtnEmpleado" />
 
     <TextView
         android:id="@+id/textView10"
@@ -47,8 +47,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:text="INGREDIENTES"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton8"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton6" />
+        app:layout_constraintEnd_toEndOf="@+id/imgbtnAsignarMesero"
+        app:layout_constraintTop_toBottomOf="@+id/imgbtnIngrediente" />
 
     <TextView
         android:id="@+id/textView11"
@@ -57,8 +57,8 @@
         android:layout_marginBottom="272dp"
         android:text="AGREGAR RECETA"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton9"
-        app:layout_constraintStart_toEndOf="@+id/imageButton9" />
+        app:layout_constraintEnd_toEndOf="@+id/imgbtnPlatillo"
+        app:layout_constraintStart_toEndOf="@+id/imgbtnPlatillo" />
 
     <TextView
         android:id="@+id/textView12"
@@ -69,7 +69,7 @@
         android:layout_marginTop="15dp"
         android:text="ASIGNACION MESERO"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton8" />
+        app:layout_constraintTop_toBottomOf="@+id/imgbtnAsignarMesero" />
 
     <TextView
         android:id="@+id/textView13"
@@ -77,8 +77,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="17dp"
         android:text="PLATILLO"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton9"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton9" />
+        app:layout_constraintEnd_toEndOf="@+id/imgbtnPlatillo"
+        app:layout_constraintTop_toBottomOf="@+id/imgbtnPlatillo" />
 
     <TextView
         android:id="@+id/textView14"
@@ -88,8 +88,8 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="15dp"
         android:text="STOCK"
-        app:layout_constraintStart_toStartOf="@+id/imageButton10"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton10" />
+        app:layout_constraintStart_toStartOf="@+id/imgbtnStock"
+        app:layout_constraintTop_toBottomOf="@+id/imgbtnStock" />
 
     <TextView
         android:id="@+id/textView15"
@@ -102,11 +102,12 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/imgbtnCerrarSesionAd"
         android:layout_width="88dp"
         android:layout_height="0dp"
         android:layout_marginTop="21dp"
         android:layout_marginBottom="28dp"
+        android:onClick="pasarCerrarSesionAdmi"
         app:layout_constraintBottom_toBottomOf="@+id/textView15"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -114,56 +115,60 @@
         app:srcCompat="@drawable/cerrarsesion" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/imgbtnEstadisticas"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton5"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton6"
-        app:layout_constraintStart_toStartOf="@+id/imageButton6"
-        app:layout_constraintTop_toTopOf="@+id/imageButton5"
+        android:onClick="pasarEstadistica"
+        app:layout_constraintBottom_toBottomOf="@+id/imgbtnEmpleado"
+        app:layout_constraintEnd_toEndOf="@+id/imgbtnIngrediente"
+        app:layout_constraintStart_toStartOf="@+id/imgbtnIngrediente"
+        app:layout_constraintTop_toTopOf="@+id/imgbtnEmpleado"
         app:srcCompat="@drawable/staticimg" />
 
     <ImageButton
-        android:id="@+id/imageButton5"
+        android:id="@+id/imgbtnEmpleado"
         android:layout_width="91dp"
         android:layout_height="71dp"
         android:layout_marginTop="105dp"
         android:layout_marginEnd="51dp"
         android:layout_marginRight="51dp"
+        android:onClick="pasarEmpleado"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_baseline_contacts_24" />
 
     <ImageButton
-        android:id="@+id/imageButton6"
+        android:id="@+id/imgbtnIngrediente"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="6dp"
         android:layout_marginLeft="6dp"
         android:layout_marginEnd="6dp"
         android:layout_marginRight="6dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton7"
+        android:onClick="pasarIngredientes"
+        app:layout_constraintBottom_toBottomOf="@+id/imgbtnAgregarRecet"
         app:layout_constraintEnd_toEndOf="@+id/textView10"
         app:layout_constraintStart_toStartOf="@+id/textView8"
-        app:layout_constraintTop_toTopOf="@+id/imageButton7"
+        app:layout_constraintTop_toTopOf="@+id/imgbtnAgregarRecet"
         app:srcCompat="@drawable/ingrediente" />
 
     <ImageButton
-        android:id="@+id/imageButton7"
+        android:id="@+id/imgbtnAgregarRecet"
         android:layout_width="0dp"
         android:layout_height="72dp"
         android:layout_marginStart="3dp"
         android:layout_marginLeft="3dp"
         android:layout_marginTop="40dp"
         android:layout_marginBottom="34dp"
+        android:onClick="pasarAgregarReceta"
         app:layout_constraintBottom_toBottomOf="@+id/textView11"
         app:layout_constraintEnd_toEndOf="@+id/textView11"
-        app:layout_constraintStart_toStartOf="@+id/imageButton5"
+        app:layout_constraintStart_toStartOf="@+id/imgbtnEmpleado"
         app:layout_constraintTop_toTopOf="@+id/textView9"
         app:srcCompat="@drawable/ic_baseline_format_list_numbered_24" />
 
     <ImageButton
-        android:id="@+id/imageButton8"
+        android:id="@+id/imgbtnAsignarMesero"
         android:layout_width="0dp"
         android:layout_height="70dp"
         android:layout_marginStart="65dp"
@@ -172,36 +177,39 @@
         android:layout_marginEnd="59dp"
         android:layout_marginRight="59dp"
         android:layout_marginBottom="135dp"
+        android:onClick="pasarAsignacionMesaAdmi"
         app:layout_constraintBottom_toTopOf="@+id/textView15"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton9"
+        app:layout_constraintEnd_toStartOf="@+id/imgbtnPlatillo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageButton7"
+        app:layout_constraintTop_toTopOf="@+id/imgbtnAgregarRecet"
         app:srcCompat="@drawable/recetario" />
 
     <ImageButton
-        android:id="@+id/imageButton9"
+        android:id="@+id/imgbtnPlatillo"
         android:layout_width="0dp"
         android:layout_height="69dp"
         android:layout_marginTop="135dp"
         android:layout_marginEnd="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="135dp"
+        android:onClick="pasarPlatillo"
         app:layout_constraintBottom_toTopOf="@+id/textView15"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton10"
-        app:layout_constraintStart_toEndOf="@+id/imageButton8"
-        app:layout_constraintTop_toTopOf="@+id/imageButton6"
+        app:layout_constraintEnd_toStartOf="@+id/imgbtnStock"
+        app:layout_constraintStart_toEndOf="@+id/imgbtnAsignarMesero"
+        app:layout_constraintTop_toTopOf="@+id/imgbtnIngrediente"
         app:srcCompat="@drawable/plato" />
 
     <ImageButton
-        android:id="@+id/imageButton10"
+        android:id="@+id/imgbtnStock"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginEnd="7dp"
         android:layout_marginRight="7dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton9"
+        android:onClick="pasarStock"
+        app:layout_constraintBottom_toBottomOf="@+id/imgbtnPlatillo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton9"
-        app:layout_constraintTop_toTopOf="@+id/imageButton9"
+        app:layout_constraintStart_toEndOf="@+id/imgbtnPlatillo"
+        app:layout_constraintTop_toTopOf="@+id/imgbtnPlatillo"
         app:srcCompat="@drawable/asignar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
