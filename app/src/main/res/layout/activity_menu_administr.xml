@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".MenuAdministr">
 
@@ -19,16 +20,110 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView8"
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        >
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+        <ImageButton
+            android:id="@+id/imgbtnCerrarSesionAd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="pasarCerrarSesionAdmi"
+            app:srcCompat="@drawable/cerrarsesion" />
+
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="19dp"
+                android:text="CERRAR SESIÓN"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+            ></LinearLayout>
+
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+
+    <ImageButton
+        android:id="@+id/imgbtnEstadisticas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="53dp"
-        android:layout_marginLeft="53dp"
-        android:layout_marginTop="11dp"
-        android:text="ESTADÍSTICAS"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgbtnEstadisticas" />
+        android:onClick="pasarEstadistica"
+        android:layout_gravity="center_horizontal"
+
+        app:srcCompat="@drawable/staticimg" />
+
+
+
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="53dp"
+            android:layout_marginLeft="53dp"
+            android:layout_marginTop="11dp"
+            android:text="ESTADÍSTICAS"
+            android:gravity="center_horizontal"
+           />
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
 
     <TextView
         android:id="@+id/textView9"
@@ -91,39 +186,8 @@
         app:layout_constraintStart_toStartOf="@+id/imgbtnStock"
         app:layout_constraintTop_toBottomOf="@+id/imgbtnStock" />
 
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="19dp"
-        android:text="CERRAR SESIÓN"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageButton
-        android:id="@+id/imgbtnCerrarSesionAd"
-        android:layout_width="88dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="21dp"
-        android:layout_marginBottom="28dp"
-        android:onClick="pasarCerrarSesionAdmi"
-        app:layout_constraintBottom_toBottomOf="@+id/textView15"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12"
-        app:srcCompat="@drawable/cerrarsesion" />
 
-    <ImageButton
-        android:id="@+id/imgbtnEstadisticas"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:onClick="pasarEstadistica"
-        app:layout_constraintBottom_toBottomOf="@+id/imgbtnEmpleado"
-        app:layout_constraintEnd_toEndOf="@+id/imgbtnIngrediente"
-        app:layout_constraintStart_toStartOf="@+id/imgbtnIngrediente"
-        app:layout_constraintTop_toTopOf="@+id/imgbtnEmpleado"
-        app:srcCompat="@drawable/staticimg" />
 
     <ImageButton
         android:id="@+id/imgbtnEmpleado"
@@ -212,4 +276,4 @@
         app:layout_constraintTop_toTopOf="@+id/imgbtnPlatillo"
         app:srcCompat="@drawable/asignar" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
