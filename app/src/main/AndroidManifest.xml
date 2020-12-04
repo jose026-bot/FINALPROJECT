@@ -30,13 +30,15 @@
         </activity>
         <activity android:name=".ModificarEmpleado" />
         <activity android:name=".MenuAdministr" >
+
+        </activity>
+        <activity android:name=".InterfazRegistroEmpleado" >
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
 
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
-        </activity>
-        <activity android:name=".InterfazRegistroEmpleado" />
+      </activity>
         <activity android:name=".MainActivity" />
     </application>
 

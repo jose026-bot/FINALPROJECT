@@ -16,7 +16,7 @@
         android:text="GUARDAR"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+        app:layout_constraintTop_toBottomOf="@+id/etdireccion" />
 
     <Button
         android:id="@+id/btnAtrasToACRU"
@@ -28,10 +28,10 @@
         android:text="ATRÁS"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+        app:layout_constraintTop_toBottomOf="@+id/etdireccion" />
 
     <EditText
-        android:id="@+id/EtxtNombreMesero"
+        android:id="@+id/etnombreMesero"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="61dp"
@@ -42,26 +42,27 @@
         android:ems="10"
         android:hint="Ingrese nombres"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/EtxtApellidosMeser"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName4"
+        app:layout_constraintBottom_toTopOf="@+id/etapellidoMesero"
+        app:layout_constraintEnd_toEndOf="@+id/etdireccion"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/btnAtrasToACRU"
         app:layout_constraintTop_toBottomOf="@+id/textView29" />
 
     <EditText
-        android:id="@+id/EtxtApellidosMeser"
+        android:id="@+id/etapellidoMesero"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="19dp"
         android:ems="10"
         android:hint="Ingrese apellidos"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/editTextNumber"
-        app:layout_constraintEnd_toEndOf="@+id/editTextNumber"
-        app:layout_constraintStart_toStartOf="@+id/editTextNumber"
-        app:layout_constraintTop_toBottomOf="@+id/EtxtNombreMesero" />
+        app:layout_constraintBottom_toTopOf="@+id/etdniMes"
+        app:layout_constraintEnd_toEndOf="@+id/etdniMes"
+        app:layout_constraintStart_toStartOf="@+id/etdniMes"
+        app:layout_constraintTop_toBottomOf="@+id/etnombreMesero" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/etdniMes"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginEnd="1dp"
@@ -70,38 +71,38 @@
         android:ems="10"
         android:hint="Ingrese DNI"
         android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName3"
-        app:layout_constraintEnd_toEndOf="@+id/EtxtNombreMesero"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName3"
-        app:layout_constraintTop_toBottomOf="@+id/EtxtApellidosMeser" />
+        app:layout_constraintBottom_toTopOf="@+id/etdistrito"
+        app:layout_constraintEnd_toEndOf="@+id/etnombreMesero"
+        app:layout_constraintStart_toStartOf="@+id/etdistrito"
+        app:layout_constraintTop_toBottomOf="@+id/etapellidoMesero" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/etdistrito"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="26dp"
         android:ems="10"
         android:hint="Ingrese distrito"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/editTextNumber2"
-        app:layout_constraintEnd_toEndOf="@+id/editTextNumber2"
-        app:layout_constraintStart_toStartOf="@+id/editTextNumber2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+        app:layout_constraintBottom_toTopOf="@+id/etnumero"
+        app:layout_constraintEnd_toEndOf="@+id/etnumero"
+        app:layout_constraintStart_toStartOf="@+id/etnumero"
+        app:layout_constraintTop_toBottomOf="@+id/etdniMes" />
 
     <EditText
-        android:id="@+id/editTextNumber2"
+        android:id="@+id/etnumero"
         android:layout_width="224dp"
         android:layout_height="0dp"
         android:layout_marginBottom="18dp"
         android:ems="10"
         android:hint="Ingrese numero de celular"
         android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName4"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName4"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+        app:layout_constraintBottom_toTopOf="@+id/etdireccion"
+        app:layout_constraintStart_toStartOf="@+id/etdireccion"
+        app:layout_constraintTop_toBottomOf="@+id/etdistrito" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/etdireccion"
         android:layout_width="271dp"
         android:layout_height="0dp"
         android:layout_marginTop="421dp"
@@ -124,7 +125,7 @@
         android:layout_marginTop="34dp"
         android:layout_marginBottom="55dp"
         android:text="AGREGAR NUEVO EMPLEADO"
-        app:layout_constraintBottom_toTopOf="@+id/EtxtNombreMesero"
+        app:layout_constraintBottom_toTopOf="@+id/etnombreMesero"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
