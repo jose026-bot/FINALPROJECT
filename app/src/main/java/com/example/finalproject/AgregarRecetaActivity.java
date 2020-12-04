@@ -11,5 +11,7 @@ public class AgregarRecetaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agregar_receta);
         setTitle("AGREGAR RECETA");
+        //probando cambios
+
     }
 }
