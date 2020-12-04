@@ -29,9 +29,9 @@ import java.util.List;
 
 public class ReporteIngredientes extends AppCompatActivity {
 
-    public static final String INGREDIENTE_NOMBRE = "net.simplifiedcoding.prueba.ingrediente_nombre";
-    public static final String INGREDIENTE_ID = "net.simplifiedcoding.prueba.ingrediente_id";
-    public static final String INGREDIENTE_CANTIDAD = "net.simplifiedcoding.prueba.ingrediente_cantidad";
+    public static final String INGREDIENTE_NOMBRE = "net.simplifiedcoding.loginrodrigo.ingrediente_nombre";
+    public static final String INGREDIENTE_ID = "net.simplifiedcoding.loginrodrigo.ingrediente_id";
+    public static final String INGREDIENTE_CANTIDAD = "net.simplifiedcoding.loginrodrigo.ingrediente_cantidad";
     private DatabaseReference BDReferencia;
     private List<Ingrediente> lista;
     private ListView lvIngredientes;
