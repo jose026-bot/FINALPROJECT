@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">FINALPROJECT</string>
+    <string name="valbtnGrabar">Grabar</string>
+    <string name="valtvReporteIngredientes">Reporte de Ingredientes</string>
+    <string name="valbtnAgregar">Agregar</string>
+    <string name="valtvIngrediente">Ingrediente</string>
+    <string name="valtvCantidad">Cantidad</string>
+    <string name="valhintCantidad">Num</string>
+    <string name="valbtnActualizar">Actualizar</string>
+    <string name="valtvMesaLugar">"Lugar: "</string>
+    <string-array name="lugar">
+        <item>Seleccione una opción...</item>
+        <item>Terraza</item>
+        <item>Sala Principal</item>
+        <item>Sótano</item>
+    </string-array>
 </resources>

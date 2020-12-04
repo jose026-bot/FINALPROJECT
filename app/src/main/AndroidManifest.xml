@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FINALPROJECT">
-        <activity android:name=".StockActivity"></activity>
+        <activity android:name=".ReporteMesas"></activity>
+        <activity android:name=".ReporteIngredientes" />
+        <activity android:name=".AgregarIngrediente" />
+        <activity android:name=".StockActivity" />
         <activity android:name=".PlatilloActivity" />
         <activity android:name=".AgregarRecetaActivity" />
         <activity android:name=".IngredientesActivity" />
@@ -25,20 +28,16 @@
         <activity android:name=".CrudEmpleadoActivity" />
         <activity android:name=".MeseroRelacionGananciaActivity" />
         <activity android:name=".ReportesAdminActivity" />
-        <activity android:name=".MenuEmpleadoActivity">
-
-        </activity>
+        <activity android:name=".MenuEmpleadoActivity" />
         <activity android:name=".ModificarEmpleado" />
-        <activity android:name=".MenuAdministr" >
+        <activity android:name=".MenuAdministr" />
+        <activity android:name=".InterfazRegistroEmpleado">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-        <activity android:name=".InterfazRegistroEmpleado" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-      </activity>
         <activity android:name=".MainActivity" />
     </application>
 
